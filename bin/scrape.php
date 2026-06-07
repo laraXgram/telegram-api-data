@@ -119,7 +119,7 @@ class TelegramApiScraper
 
         foreach ($headings as $heading) {
             $name = trim($heading->textContent);
-            if (!preg_match('/^[A-Z]/', $name) || strlen($name) > 50) continue;
+            if (!preg_match('/^[A-Z][a-zA-Z0-9]+$/', $name)) continue;
             if ($name === 'Determining list of commands') continue;
 
             $fields        = [];
