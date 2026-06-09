@@ -14,6 +14,7 @@ Automated scraper for the [Telegram Bot API](https://core.telegram.org/bots/api)
 ```json
 {
   "scraped_at": "2026-06-07T00:00:00+00:00",
+  "version": "10.0",
   "source": "https://core.telegram.org/bots/api",
   "methods": {
     "sendMessage": {
@@ -38,7 +39,7 @@ Automated scraper for the [Telegram Bot API](https://core.telegram.org/bots/api)
 
 ## Schedule
 
-Runs automatically every **Sunday at 00:00 UTC** via GitHub Actions.
+Runs automatically **every 24 hours at 00:00 UTC** via GitHub Actions.
 
 ## Raw content URL
 

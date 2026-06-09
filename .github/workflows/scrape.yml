@@ -2,7 +2,7 @@ name: Scrape Telegram API
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Every Sunday at 00:00 UTC
+    - cron: '0 0 * * *'  # Every 24 hours
   workflow_dispatch:
 
 permissions:
