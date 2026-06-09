@@ -10,10 +10,18 @@ class TelegramApiScraper
     private string $outFile;
     private array  $methods = [];
     private array  $types   = [];
+    private string $version = '';
 
     public function __construct(string $outFile)
     {
         $this->outFile = $outFile;
+    }
+
+    private function parseVersion(string $html): void
+    {
+        if (preg_match('/Bot API\s+([\d.]+)/i', $html, $m)) {
+            $this->version = $m[1];
+        }
     }
 
     private function fetchPage(): string
@@ -197,6 +205,8 @@ class TelegramApiScraper
         echo "Fetching {$this->apiUrl} ..." . PHP_EOL;
         $html = $this->fetchPage();
 
+        $this->parseVersion($html);
+
         echo "Parsing methods..." . PHP_EOL;
         $this->parseMethods($html);
         echo "  Methods: " . count($this->methods) . PHP_EOL;
@@ -207,6 +217,7 @@ class TelegramApiScraper
 
         $data = [
             'scraped_at' => date('c'),
+            'version'    => $this->version,
             'source'     => $this->apiUrl,
             'methods'    => $this->methods,
             'types'      => $this->types,
