@@ -1,5 +1,6 @@
 {
-    "scraped_at": "2026-06-07T10:54:20+00:00",
+    "scraped_at": "2026-06-09T23:05:08+00:00",
+    "version": "10.0",
     "source": "https://core.telegram.org/bots/api",
     "methods": {
         "getUpdates": {
