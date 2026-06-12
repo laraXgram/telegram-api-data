@@ -1,5 +1,5 @@
 {
-    "scraped_at": "2026-06-11T18:26:58+00:00",
+    "scraped_at": "2026-06-12T02:28:24+00:00",
     "version": "10.1",
     "source": "https://core.telegram.org/bots/api",
     "methods": {
@@ -16118,7 +16118,7 @@
                 {
                     "name": "rich_message",
                     "type": "InputRichMessage",
-                    "description": "Yes"
+                    "description": "The message to be sent"
                 }
             ]
         },
