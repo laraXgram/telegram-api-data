@@ -1,5 +1,5 @@
 {
-    "scraped_at": "2026-06-18T02:34:30+00:00",
+    "scraped_at": "2026-06-19T02:50:22+00:00",
     "version": "10.1",
     "source": "https://core.telegram.org/bots/api",
     "methods": {
@@ -2977,7 +2977,7 @@
         },
         "sendChatJoinRequestWebApp": {
             "name": "sendChatJoinRequestWebApp",
-            "description": "Use this method to process a received chat join request query by showing a Mini App to the user before deciding the outcome. Returns True on success.",
+            "description": "Use this method to process a received chat join request query by showing a Mini App to the user before deciding the outcome. Call answerChatJoinRequestQuery to resolve the join request query based on the user interaction with the Mini App. Returns True on success.",
             "parameters": [
                 {
                     "name": "chat_join_request_query_id",
@@ -5638,7 +5638,7 @@
                     "name": "business_connection_id",
                     "type": "String",
                     "required": false,
-                    "description": "Unique identifier of the business connection on behalf of which the message will be sent"
+                    "description": "Unique identifier of the business connection on behalf of which the message will be sent. Bot can send rich messages on behalf of a business account only if the corresponding user can send rich messages."
                 },
                 {
                     "name": "message_thread_id",
@@ -11082,7 +11082,7 @@
                 {
                     "name": "query_id",
                     "type": "String",
-                    "description": "Optional. Identifier of the join request query. If present, then the bot must call sendChatJoinRequestWebApp or directly call answerChatJoinRequestQuery within 10 seconds."
+                    "description": "Optional. Identifier of the join request query; for bots assigned to process join request only. If present, then the bot must call sendChatJoinRequestWebApp or directly call answerChatJoinRequestQuery within 10 seconds."
                 }
             ]
         },
@@ -14684,7 +14684,7 @@
         },
         "RichBlockPhoto": {
             "name": "RichBlockPhoto",
-            "description": "A block with a photo, corresponding to the HTML tag <photo>.",
+            "description": "A block with a photo, corresponding to the HTML tag <img>.",
             "fields": [
                 {
                     "name": "type",
