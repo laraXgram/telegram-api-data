@@ -1,5 +1,5 @@
 {
-    "scraped_at": "2026-07-12T01:28:45+00:00",
+    "scraped_at": "2026-07-13T01:29:49+00:00",
     "version": "10.1",
     "source": "https://core.telegram.org/bots/api",
     "methods": {
@@ -4846,7 +4846,7 @@
                     "name": "media",
                     "type": "InputMedia",
                     "required": true,
-                    "description": "A JSON-serialized object for a new media content of the message"
+                    "description": "A JSON-serialized object for the new media content of the message"
                 },
                 {
                     "name": "business_connection_id",
