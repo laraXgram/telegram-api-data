@@ -1,5 +1,5 @@
 {
-    "scraped_at": "2026-07-14T12:30:49+00:00",
+    "scraped_at": "2026-07-15T01:16:07+00:00",
     "version": "10.2",
     "source": "https://core.telegram.org/bots/api",
     "methods": {
@@ -7386,7 +7386,7 @@
                 {
                     "name": "ephemeral_message_id",
                     "type": "Integer",
-                    "description": "For ephemeral messages, identifier of the ephemeral message inside this chat. The identifier may be reused for another ephemeral message after the message is deleted or expires."
+                    "description": "Optional. For ephemeral messages, identifier of the ephemeral message inside this chat. The identifier may be reused for another ephemeral message after the message is deleted or expires."
                 },
                 {
                     "name": "date",
@@ -8204,11 +8204,6 @@
                     "name": "chat_id",
                     "type": "Integer or String",
                     "description": "Optional. If the message to be replied to is from a different chat, unique identifier for the chat or username of the bot, supergroup or channel in the format @username. Not supported for messages sent on behalf of a business account, messages from channel direct messages chats and ephemeral messages."
-                },
-                {
-                    "name": "allow_sending_without_reply",
-                    "type": "Boolean",
-                    "description": "Optional. Pass True if the message should be sent even if the specified message to be replied to is not found. Always False for replies in another chat or forum topic. Always True for messages sent on behalf of a business account."
                 },
                 {
                     "name": "ephemeral_message_id",
