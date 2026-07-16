@@ -1,5 +1,5 @@
 {
-    "scraped_at": "2026-07-15T01:16:07+00:00",
+    "scraped_at": "2026-07-16T01:25:58+00:00",
     "version": "10.2",
     "source": "https://core.telegram.org/bots/api",
     "methods": {
@@ -157,7 +157,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "parse_mode",
@@ -541,7 +541,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "caption",
@@ -667,7 +667,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "caption",
@@ -787,7 +787,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "caption",
@@ -919,7 +919,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "thumbnail",
@@ -1039,7 +1039,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "duration",
@@ -1201,7 +1201,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "duration",
@@ -1345,7 +1345,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "caption",
@@ -1459,7 +1459,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "duration",
@@ -1747,7 +1747,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "horizontal_accuracy",
@@ -1879,7 +1879,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "foursquare_id",
@@ -1999,7 +1999,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "last_name",
@@ -5608,7 +5608,7 @@
                     "name": "callback_query_id",
                     "type": "String",
                     "required": false,
-                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggerred the message if any"
+                    "description": "For outgoing ephemeral messages, identifier of the callback query which triggered the message if any"
                 },
                 {
                     "name": "emoji",
@@ -7771,7 +7771,7 @@
                 {
                     "name": "proximity_alert_triggered",
                     "type": "ProximityAlertTriggered",
-                    "description": "Optional. Service message. A user in the chat triggered another user's proximity alert while sharing Live Location."
+                    "description": "Optional. Service message: a user in the chat triggered another user's proximity alert while sharing Live Location"
                 },
                 {
                     "name": "boost_added",
