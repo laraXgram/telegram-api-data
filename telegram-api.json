@@ -1,5 +1,5 @@
 {
-    "scraped_at": "2026-08-24T16:09:27+00:00",
+    "scraped_at": "2026-08-25T00:35:15+00:00",
     "version": "10.3",
     "source": "https://core.telegram.org/bots/api",
     "methods": {
@@ -6016,7 +6016,7 @@
                     "name": "draft_id",
                     "type": "Integer",
                     "required": true,
-                    "description": "Unique identifier of the message draft; must be non-zero. Changes to drafts with the same identifier are animated."
+                    "description": "Unique identifier of the message draft; must be non-zero. Changes to drafts with the same identifier are animated. Otherwise, the draft is replaced without animation."
                 },
                 {
                     "name": "rich_message",
@@ -6029,6 +6029,18 @@
                     "type": "Integer",
                     "required": false,
                     "description": "Unique identifier for the target message thread"
+                },
+                {
+                    "name": "can_stop",
+                    "type": "Boolean",
+                    "required": false,
+                    "description": "Pass True to show the user a button to stop further drafts. The bot will receive an Update “stopped_message_generation” if the user presses the button."
+                },
+                {
+                    "name": "keep_on_stop",
+                    "type": "Boolean",
+                    "required": false,
+                    "description": "Pass True to keep the draft in the chat when the button is pressed. The draft will still disappear after a short time or if the bot sends a message. To fully preserve the partial draft, the bot should send it as a new message."
                 }
             ]
         },
@@ -14304,7 +14316,7 @@
                 },
                 {
                     "name": "media",
-                    "type": "InputMediaAnimation or InputMediaAudio or InputMediaPhoto or InputMediaVideo or InputMediaVoiceNote",
+                    "type": "InputMediaAnimation or InputMediaAudio or InputMediaDocument or InputMediaPhoto or InputMediaVideo or InputMediaVoiceNote",
                     "description": "The media to be sent. Everything except the media itself and its properties is ignored."
                 }
             ]
